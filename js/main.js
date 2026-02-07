@@ -41,6 +41,46 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeEls.forEach(el => observer.observe(el));
   }
 
+  // --- Email Signup Form ---
+  const signupForm = document.getElementById('signupForm');
+
+  if (signupForm) {
+    signupForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = document.getElementById('emailInput');
+      const btn = signupForm.querySelector('button[type="submit"]');
+      const email = input.value.trim();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!emailPattern.test(email)) {
+        input.style.borderColor = '#ef4444';
+        input.style.boxShadow = '0 0 0 3px rgba(239, 68, 68, 0.2)';
+        return;
+      }
+
+      // TODO: Replace this URL with your Mailchimp form action URL
+      // Example: https://ftp.us21.list-manage.com/subscribe/post?u=XXXXX&id=XXXXX
+      const MAILCHIMP_URL = '';
+
+      if (MAILCHIMP_URL) {
+        const formData = new FormData();
+        formData.append('EMAIL', email);
+
+        fetch(MAILCHIMP_URL, {
+          method: 'POST',
+          body: formData,
+          mode: 'no-cors'
+        }).catch(() => {});
+      }
+
+      btn.textContent = '\u2713 Noted!';
+      btn.style.background = '#10b981';
+      btn.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.3)';
+      input.disabled = true;
+      btn.disabled = true;
+    });
+  }
+
   // --- Active Nav Link ---
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(link => {

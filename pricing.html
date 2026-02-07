@@ -46,10 +46,10 @@
         <h2>Coming Soon</h2>
         <p>We're currently in development, fine-tuning our models and building the platform. Pricing details will be announced at launch.</p>
 
-        <div class="email-signup">
-          <input type="email" placeholder="Enter your email" id="emailInput">
-          <button class="btn btn-primary" onclick="handleSignup()">Notify Me</button>
-        </div>
+        <form class="email-signup" id="signupForm" novalidate>
+          <input type="email" placeholder="Enter your email" id="emailInput" required>
+          <button type="submit" class="btn btn-primary">Notify Me</button>
+        </form>
 
         <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 16px; margin-bottom: 0;">We'll only email you when we launch. No spam.</p>
       </div>
@@ -119,22 +119,15 @@
         </ul>
         <span class="footer-copy">&copy; 2026 FTP.ai — All rights reserved.</span>
       </div>
+      <ul class="footer-legal">
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="responsible-gambling.html">Responsible Gambling</a></li>
+      </ul>
+      <p class="footer-disclaimer">Gambling problem? Call <strong>1-800-522-4700</strong> (NCPG). Must be 18+. FTP.ai provides predictions for informational purposes only — not gambling advice.</p>
     </div>
   </footer>
 
   <script src="js/main.js"></script>
-  <script>
-    function handleSignup() {
-      const email = document.getElementById('emailInput').value;
-      if (email && email.includes('@')) {
-        const btn = document.querySelector('.email-signup .btn');
-        btn.textContent = '✓ Noted!';
-        btn.style.background = '#10b981';
-        btn.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.3)';
-        document.getElementById('emailInput').disabled = true;
-        // In production, this would POST to your backend
-      }
-    }
-  </script>
 </body>
 </html>
