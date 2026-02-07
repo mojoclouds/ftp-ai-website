@@ -7,13 +7,13 @@
   <meta name="description" content="{{ description }}">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://mojoclouds.xyz{{ url }}">
+  <link rel="canonical" href="https://mojoclouds.github.io/ftp-ai-website{{ url }}">
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
-  <meta property="og:url" content="https://mojoclouds.xyz{{ url }}">
-  <meta property="og:image" content="https://mojoclouds.xyz/images/og-share.png">
+  <meta property="og:url" content="https://mojoclouds.github.io/ftp-ai-website{{ url }}">
+  <meta property="og:image" content="https://mojoclouds.github.io{{ '/images/og-share.png' | url }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="FTP.ai">
 
@@ -21,16 +21,16 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ description }}">
-  <meta name="twitter:image" content="https://mojoclouds.xyz/images/og-share.png">
+  <meta name="twitter:image" content="https://mojoclouds.github.io{{ '/images/og-share.png' | url }}">
 
   <!-- Google Fonts (preconnect + link for parallel loading) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
 
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
-  <link rel="apple-touch-icon" href="/images/apple-touch-icon.svg">
+  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/images/favicon.svg' | url }}">
+  <link rel="apple-touch-icon" href="{{ '/images/apple-touch-icon.svg' | url }}">
 
   <!-- Google Analytics 4 -->
   <!-- TODO: Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
@@ -57,6 +57,6 @@
 
   {% include "footer.njk" %}
 
-  <script src="/js/main.js"></script>
+  <script src="{{ '/js/main.js' | url }}"></script>
 </body>
 </html>

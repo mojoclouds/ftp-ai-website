@@ -22,6 +22,7 @@ module.exports = function(eleventyConfig) {
   });
 
   return {
+    pathPrefix: "/ftp-ai-website/",
     dir: {
       input: "src",
       output: "_site",

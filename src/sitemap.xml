@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mojoclouds.xyz/</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/how-it-works.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/how-it-works.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/sports.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/sports.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/track-record.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/track-record.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/pricing.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/pricing.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/about.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/about.html</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/blog/</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/blog/</loc>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/blog/why-fade-the-public-works/</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/blog/why-fade-the-public-works/</loc>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/privacy.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/privacy.html</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/terms.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/terms.html</loc>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://mojoclouds.xyz/responsible-gambling.html</loc>
+    <loc>https://mojoclouds.github.io/ftp-ai-website/responsible-gambling.html</loc>
     <priority>0.3</priority>
   </url>
 </urlset>

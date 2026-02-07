@@ -1,15 +1,15 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav-inner">
-      <a href="/" class="nav-logo">FTP<span class="dot">.</span>ai</a>
+      <a href="{{ '/' | url }}" class="nav-logo">FTP<span class="dot">.</span>ai</a>
       <ul class="nav-links" id="nav-links" role="list">
-        <li><a href="/"{% if activeNav == "home" %} class="active"{% endif %}>Home</a></li>
-        <li><a href="/how-it-works.html"{% if activeNav == "how-it-works" %} class="active"{% endif %}>How It Works</a></li>
-        <li><a href="/sports.html"{% if activeNav == "sports" %} class="active"{% endif %}>Sports</a></li>
-        <li><a href="/track-record.html"{% if activeNav == "track-record" %} class="active"{% endif %}>Track Record</a></li>
-        <li><a href="/pricing.html"{% if activeNav == "pricing" %} class="active"{% endif %}>Pricing</a></li>
-        <li><a href="/about.html"{% if activeNav == "about" %} class="active"{% endif %}>About</a></li>
-        <li><a href="/blog/"{% if activeNav == "blog" %} class="active"{% endif %}>Blog</a></li>
+        <li><a href="{{ '/' | url }}"{% if activeNav == "home" %} class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ '/how-it-works.html' | url }}"{% if activeNav == "how-it-works" %} class="active"{% endif %}>How It Works</a></li>
+        <li><a href="{{ '/sports.html' | url }}"{% if activeNav == "sports" %} class="active"{% endif %}>Sports</a></li>
+        <li><a href="{{ '/track-record.html' | url }}"{% if activeNav == "track-record" %} class="active"{% endif %}>Track Record</a></li>
+        <li><a href="{{ '/pricing.html' | url }}"{% if activeNav == "pricing" %} class="active"{% endif %}>Pricing</a></li>
+        <li><a href="{{ '/about.html' | url }}"{% if activeNav == "about" %} class="active"{% endif %}>About</a></li>
+        <li><a href="{{ '/blog/' | url }}"{% if activeNav == "blog" %} class="active"{% endif %}>Blog</a></li>
       </ul>
       <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
         <span></span>
