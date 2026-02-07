@@ -1,0 +1,18 @@
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">FTP<span class="dot">.</span>ai</a>
+      <ul class="nav-links">
+        <li><a href="/"{% if activeNav == "home" %} class="active"{% endif %}>Home</a></li>
+        <li><a href="/how-it-works.html"{% if activeNav == "how-it-works" %} class="active"{% endif %}>How It Works</a></li>
+        <li><a href="/sports.html"{% if activeNav == "sports" %} class="active"{% endif %}>Sports</a></li>
+        <li><a href="/pricing.html"{% if activeNav == "pricing" %} class="active"{% endif %}>Pricing</a></li>
+        <li><a href="/about.html"{% if activeNav == "about" %} class="active"{% endif %}>About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>

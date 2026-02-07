@@ -3,8 +3,7 @@
    Dark / Sleek / Data-Driven Aesthetic
    ============================================ */
 
-/* --- Google Fonts --- */
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+/* Google Fonts loaded via <link> in base.njk for faster parallel fetching */
 
 /* --- CSS Variables --- */
 :root {

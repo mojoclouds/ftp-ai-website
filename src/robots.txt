@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mojoclouds.xyz/sitemap.xml

@@ -1,0 +1,12 @@
+{
+  "name": "ftp-ai-website",
+  "version": "1.0.0",
+  "description": "FTP.ai pre-launch marketing site",
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
