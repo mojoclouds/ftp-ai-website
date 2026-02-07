@@ -9,8 +9,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (toggle && navLinks) {
     toggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
       toggle.classList.toggle('open');
-      navLinks.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen);
+
+      // Focus first nav link when opening
+      if (isOpen) {
+        const firstLink = navLinks.querySelector('a');
+        if (firstLink) firstLink.focus();
+      }
     });
 
     // Close nav when a link is clicked
@@ -18,7 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
       link.addEventListener('click', () => {
         toggle.classList.remove('open');
         navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
       });
+    });
+
+    // Close nav on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('open')) {
+        toggle.classList.remove('open');
+        navLinks.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+        toggle.focus();
+      }
     });
   }
 
@@ -81,12 +99,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- Active Nav Link ---
-  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('.nav-links a').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPage || (currentPage === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
-  });
+  // Active nav link is now handled server-side by Eleventy via the
+  // activeNav frontmatter variable in each page template.
 });
