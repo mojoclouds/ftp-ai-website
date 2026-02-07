@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing — FTP.ai</title>
+  <meta name="description" content="FTP.ai pricing and plans. Coming soon — sign up to be notified when we launch.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">FTP<span class="dot">.</span>ai</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="sports.html">Sports</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label fade-in">Pricing</span>
+      <h1 class="fade-in fade-in-delay-1">Plans & Pricing</h1>
+      <p class="fade-in fade-in-delay-2">We're finalizing our pricing structure. Get notified when we launch.</p>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="section" style="padding-top: 20px;">
+    <div class="container">
+      <div class="coming-soon-block fade-in">
+        <span class="big-icon">🚀</span>
+        <h2>Coming Soon</h2>
+        <p>We're currently in development, fine-tuning our models and building the platform. Pricing details will be announced at launch.</p>
+
+        <div class="email-signup">
+          <input type="email" placeholder="Enter your email" id="emailInput">
+          <button class="btn btn-primary" onclick="handleSignup()">Notify Me</button>
+        </div>
+
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 16px; margin-bottom: 0;">We'll only email you when we launch. No spam.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">What to Expect</span>
+        <h2 class="section-title">What You'll Get</h2>
+        <p class="section-subtitle">While we finalize pricing, here's what subscribers will have access to.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card fade-in">
+          <div class="card-icon">📊</div>
+          <h3>Daily Predictions</h3>
+          <p>Model-generated picks delivered daily across all covered sports, with confidence levels and supporting data for every play.</p>
+        </div>
+
+        <div class="card fade-in fade-in-delay-1">
+          <div class="card-icon">📱</div>
+          <h3>Multi-Channel Delivery</h3>
+          <p>Get predictions via Discord, email, SMS, and our web platform — wherever you prefer, whenever games are on the board.</p>
+        </div>
+
+        <div class="card fade-in fade-in-delay-2">
+          <div class="card-icon">📈</div>
+          <h3>Performance Tracking</h3>
+          <p>Full transparency with tracked results, historical performance dashboards, and ROI metrics updated in real time.</p>
+        </div>
+
+        <div class="card fade-in">
+          <div class="card-icon">🔔</div>
+          <h3>Real-Time Alerts</h3>
+          <p>Instant notifications when high-confidence plays are identified, with line movement alerts so you can act before the market adjusts.</p>
+        </div>
+
+        <div class="card fade-in fade-in-delay-1">
+          <div class="card-icon">🧠</div>
+          <h3>Model Insights</h3>
+          <p>Understand the "why" behind every prediction with detailed breakdowns of the factors driving each play.</p>
+        </div>
+
+        <div class="card fade-in fade-in-delay-2">
+          <div class="card-icon">🏆</div>
+          <h3>All Sports Access</h3>
+          <p>Coverage across NBA, NFL, NHL, MLB, NCAAF, NCAAB, Tennis, and Table Tennis — all included in your subscription.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">FTP<span class="dot">.</span>ai</div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-it-works.html">How It Works</a></li>
+          <li><a href="sports.html">Sports</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <span class="footer-copy">&copy; 2026 FTP.ai — All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    function handleSignup() {
+      const email = document.getElementById('emailInput').value;
+      if (email && email.includes('@')) {
+        const btn = document.querySelector('.email-signup .btn');
+        btn.textContent = '✓ Noted!';
+        btn.style.background = '#10b981';
+        btn.style.boxShadow = '0 0 20px rgba(16, 185, 129, 0.3)';
+        document.getElementById('emailInput').disabled = true;
+        // In production, this would POST to your backend
+      }
+    }
+  </script>
+</body>
+</html>
