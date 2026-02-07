@@ -13,12 +13,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://mojoclouds.xyz/track-record.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://mojoclouds.xyz/pricing.html</loc>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://mojoclouds.xyz/about.html</loc>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mojoclouds.xyz/blog/</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://mojoclouds.xyz/blog/why-fade-the-public-works/</loc>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://mojoclouds.xyz/privacy.html</loc>

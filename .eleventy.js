@@ -5,6 +5,22 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
+  // Blog collection — sorted by date, newest first
+  eleventyConfig.addCollection("blog", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/*.njk").sort((a, b) => {
+      return b.date - a.date;
+    });
+  });
+
+  // Date formatting filter for blog posts
+  eleventyConfig.addFilter("dateFormat", function(date) {
+    return new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    });
+  });
+
   return {
     dir: {
       input: "src",

@@ -101,4 +101,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Active nav link is now handled server-side by Eleventy via the
   // activeNav frontmatter variable in each page template.
+
+  // --- Terminal Typing Animation ---
+  const terminal = document.getElementById('terminal-anim');
+
+  if (terminal) {
+    const lines = terminal.querySelectorAll('.terminal-line');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (prefersReducedMotion) {
+      // Show all lines immediately for reduced motion
+      lines.forEach(line => {
+        line.classList.add('typed');
+      });
+    } else {
+      // Animate lines when terminal scrolls into view
+      const terminalObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            lines.forEach((line, i) => {
+              const delay = parseInt(line.dataset.delay, 10) || (i * 600);
+
+              // Show cursor on current line
+              setTimeout(() => {
+                // Remove cursor from previous line
+                if (i > 0) lines[i - 1].classList.remove('typing');
+                line.classList.add('typed', 'typing');
+              }, delay);
+
+              // Remove cursor from last line after it appears
+              if (i === lines.length - 1) {
+                setTimeout(() => {
+                  line.classList.remove('typing');
+                }, delay + 800);
+              }
+            });
+            terminalObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.3 });
+
+      terminalObserver.observe(terminal);
+    }
+  }
 });
