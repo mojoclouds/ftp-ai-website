@@ -23,7 +23,7 @@ permalink: "/blog/index.html"
       {% if posts.length > 0 %}
       <div class="blog-list">
         {% for post in posts %}
-        <a href="{{ post.url }}" class="blog-card fade-in">
+        <a href="{{ post.url | url }}" class="blog-card fade-in">
           <div class="blog-card-content">
             <span class="blog-date">{{ post.date | dateFormat }}</span>
             <h2>{{ post.data.title }}</h2>
