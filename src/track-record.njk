@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: "Track Record — FTP.ai"
-description: "FTP.ai backtested model performance across all covered sports. Transparent results, verified by data."
+title: "Track Record | Backtested Sports Prediction Results | FTP.ai"
+description: "57.2% win rate, +8.3% ROI across 2,847 backtested plays (2020-2025). Sport-by-sport performance breakdown with full methodology transparency."
 url: "/track-record.html"
 activeNav: "track-record"
 permalink: "/track-record.html"
@@ -13,6 +13,7 @@ permalink: "/track-record.html"
       <span class="section-label fade-in">Performance</span>
       <h1 class="fade-in fade-in-delay-1">Track Record</h1>
       <p class="fade-in fade-in-delay-2">Backtested model performance across all covered sports. No cherry-picking, no hiding — just the numbers.</p>
+      <p class="fade-in fade-in-delay-3" style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-muted); margin-top: 12px;">Data period: 2020–2025 seasons &middot; Flat 1u sizing at -110</p>
     </div>
   </section>
 
@@ -31,7 +32,7 @@ permalink: "/track-record.html"
       <div class="section-header fade-in">
         <span class="section-label">Overall</span>
         <h2 class="section-title">Aggregate Performance</h2>
-        <p class="section-subtitle">Combined results across all sports and bet types from backtested data.</p>
+        <p class="section-subtitle">Combined results across all sports and bet types from 5 seasons of backtested data (2020–2025).</p>
       </div>
 
       <div class="stats-row fade-in" style="border-top: none; margin-top: 0; padding-top: 0;">
@@ -256,14 +257,6 @@ permalink: "/track-record.html"
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section" style="padding-top: 20px;">
-    <div class="container">
-      <div class="coming-soon-block fade-in">
-        <span class="big-icon">📈</span>
-        <h2>Live Tracking Coming Soon</h2>
-        <p>Once we launch, all predictions and results will be tracked in real time with a public dashboard. No more "trust me" — verify it yourself.</p>
-        <a href="{{ '/pricing.html' | url }}" class="btn btn-primary">Get Notified</a>
-      </div>
-    </div>
-  </section>
+  {% set signupHeading = "Live Tracking Coming Soon" %}
+  {% set signupText = "Once we launch, all predictions and results will be tracked in real time with a public dashboard. No more \"trust me\" — verify it yourself." %}
+  {% include "signup-cta.njk" %}

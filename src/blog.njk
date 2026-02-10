@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: "Blog — FTP.ai"
-description: "Insights on algorithmic sports prediction, model methodology, market analysis, and the science behind FTP.ai."
+title: "Blog | Sports Betting Analytics & Model Insights | FTP.ai"
+description: "Articles on contrarian betting strategy, ML model methodology, sports market analysis, and the data science behind algorithmic sports predictions."
 url: "/blog/"
 activeNav: "blog"
 permalink: "/blog/index.html"
@@ -38,7 +38,13 @@ permalink: "/blog/index.html"
         <span class="big-icon">📝</span>
         <h2>Posts Coming Soon</h2>
         <p>We're working on our first articles covering model methodology, market analysis, and sports-specific insights. Check back soon.</p>
-        <a href="{{ '/pricing.html' | url }}" class="btn btn-primary">Get Notified</a>
+
+        <form class="email-signup" id="signupForm" novalidate>
+          <input type="email" placeholder="Enter your email" id="emailInput" required>
+          <button type="submit" class="btn btn-primary">Join the Waitlist</button>
+        </form>
+
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 16px; margin-bottom: 0;">We'll only email you when we launch. No spam.</p>
       </div>
       {% endif %}
     </div>

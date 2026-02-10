@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: "Sports Covered — FTP.ai"
-description: "FTP.ai covers NBA, NFL, NHL, MLB, NCAAF, NCAAB, Tennis, and Table Tennis with algorithmic sports predictions."
+title: "Sports Covered | NBA, NFL, NHL, MLB, NCAAF & More | FTP.ai"
+description: "Algorithmic predictions for NBA, NFL, NHL, MLB, NCAAF, NCAAB, Tennis, and Table Tennis. Dedicated ML models tuned for each sport's unique dynamics."
 url: "/sports.html"
 activeNav: "sports"
 permalink: "/sports.html"
@@ -115,14 +115,6 @@ permalink: "/sports.html"
     </div>
   </section>
 
-  <!-- More Coming -->
-  <section class="section" style="padding-top: 20px;">
-    <div class="container">
-      <div class="coming-soon-block fade-in">
-        <span class="big-icon">🌐</span>
-        <h2>More Sports Coming</h2>
-        <p>We're actively developing models for additional sports and leagues. Our infrastructure is built to scale — new sports can be onboarded as data pipelines are validated.</p>
-        <a href="{{ '/pricing.html' | url }}" class="btn btn-primary">Stay Updated</a>
-      </div>
-    </div>
-  </section>
+  {% set signupHeading = "More Sports Coming" %}
+  {% set signupText = "We're actively developing models for additional sports and leagues. Sign up to get notified when new sports go live." %}
+  {% include "signup-cta.njk" %}

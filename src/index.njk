@@ -1,7 +1,7 @@
 ---
 layout: base.njk
-title: "FTP.ai — Algorithmic Sports Predictions"
-description: "Algorithmic sports modeling & predictions. Powered by ML, validated by backtesting. No hunches, just numbers."
+title: "FTP.ai | Algorithmic Sports Betting Predictions Powered by ML"
+description: "ML-powered contrarian sports predictions across NBA, NFL, NHL, MLB & more. Backtested models that fade the public to find value. Join the waitlist."
 url: "/"
 activeNav: "home"
 permalink: "/index.html"
@@ -27,7 +27,7 @@ permalink: "/index.html"
       </p>
 
       <div class="hero-cta-group fade-in fade-in-delay-3">
-        <a href="{{ '/pricing.html' | url }}" class="btn btn-primary">Coming Soon</a>
+        <a href="{{ '/pricing.html' | url }}" class="btn btn-primary">Join the Waitlist</a>
         <a href="{{ '/how-it-works.html' | url }}" class="btn btn-outline">Learn More</a>
       </div>
 
@@ -98,14 +98,5 @@ permalink: "/index.html"
     </div>
   </section>
 
-  <!-- CTA Section -->
-  <section class="section" style="padding-bottom: 60px;">
-    <div class="container">
-      <div class="coming-soon-block fade-in">
-        <span class="big-icon">🚀</span>
-        <h2>Launching Soon</h2>
-        <p>We're fine-tuning our models and building out the platform. Be the first to get access when we go live.</p>
-        <a href="{{ '/pricing.html' | url }}" class="btn btn-primary">Get Notified</a>
-      </div>
-    </div>
-  </section>
+  {% set signupHeading = "Launching Soon" %}
+  {% include "signup-cta.njk" %}
