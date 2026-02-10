@@ -121,7 +121,12 @@
       "WebFetch(domain:www.yardbarker.com)",
       "WebFetch(domain:www.landofbasketball.com)",
       "WebFetch(domain:www.sportsbettingdime.com)",
-      "WebFetch(domain:www.pickswise.com)"
+      "WebFetch(domain:www.pickswise.com)",
+      "WebFetch(domain:localhost)",
+      "Bash(powershell.exe:*)",
+      "WebFetch(domain:mojoclouds.github.io)",
+      "Bash(npm run build:*)",
+      "Bash(npm run serve:*)"
     ],
     "deny": [],
     "ask": []
